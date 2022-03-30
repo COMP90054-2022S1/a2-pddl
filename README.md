@@ -148,7 +148,9 @@ Some public-private key encryption schemes have remarkable mathematical properti
 
 Why would anyone want to send a message encrypted with a private key that anyone can decrypt with the public key? Because the ability to decrypt with the public key means that the message must have come from that agent --- they are the only one with the private key.
 
-**The task: ** In the file [key_exchange.pddl](key_exchange.pddl), using the idea of  public and private keys, use the planner to discover a secure protocol for setting up a shared key between two agents without any other agent learning the shared key, such as the Diffie-Hellman protocol.
+**The task: ** Create a file [key_exchange.pddl](key_exchange.pddl) by copying your domain file from Tasks 1 and 3.
+
+In this task, using the idea of  public and private keys, you will use the planner to discover a secure protocol for setting up a shared key between two agents without any other agent learning the shared key, such as the Diffie-Hellman protocol.
 
 The actual mechanism is not important, provided that it satisfies the following:
 
@@ -158,11 +160,15 @@ The actual mechanism is not important, provided that it satisfies the following:
 
 3. The receiving agent must know that the shared key was sent by the sender.
 
-In the problem file [key_exchange_problem.pddl](key_exchange_problem.pddl), model the same network structure as in Task 2 and demonstrate that agent `a1` can send a shared key `k1` to agent `a3` satisfying the requirements above.
+As with Task 3, the only actions used should be `encrypt`, `decrypt`, and `share`.
+
+Create a problem file [key_exchange_problem.pddl](key_exchange_problem.pddl), model the same network structure as in Task 2 and demonstrate that agent `a1` can send a shared key `k1` to agent `a3` satisfying the requirements above.
 
  **Marking criteria**: 
  - The domain  file correctly models the problem to achieve the requirements [1 mark]
  - The problem file correctly models the problem and generates a correct plan [1 mark]
+
+**Note:** Remember to add your new files to the repository using `git add key_exchange.pddl key_exchange_problem.pddl`.
 
 
 ## Checking your submission
