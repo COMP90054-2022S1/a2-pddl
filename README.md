@@ -162,7 +162,7 @@ The actual mechanism is not important, provided that it satisfies the following:
 
 As with Task 3, the only actions used should be `encrypt`, `decrypt`, and `share`.
 
-Create a problem file [key_exchange_problem.pddl](key_exchange_problem.pddl), model the same network structure as in Task 2 and demonstrate that agent `a1` can send a shared key `k1` to agent `a3` satisfying the requirements above.
+Create a problem file [key_exchange_problem.pddl](key_exchange_problem.pddl), model the same network structure as in Task 2, **except** that agents can communicate in both directions. Demonstrate that agent `a1` can send a shared key `k1` to agent `a3` satisfying the requirements above.
 
  **Marking criteria**: 
  - The domain  file correctly models the problem to achieve the requirements [1 mark]
